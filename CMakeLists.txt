@@ -13,8 +13,8 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-msg/Pose.msg
-srv/SetPose.srv
+msg/2DPose.msg
+srv/Set2DPose.srv
 )
 
 if(BUILD_TESTING)
