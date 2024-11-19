@@ -18,6 +18,7 @@ msg/TwoDimPose.msg
 srv/SetTwoDimPose.srv
 DEPENDENCIES std_msgs
 )
+ament_export_dependencies(rosidl_default_runtime)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
