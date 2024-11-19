@@ -11,10 +11,12 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-msg/2DPose.msg
-srv/Set2DPose.srv
+msg/TwoDimPose.msg
+srv/SetTwoDimPose.srv
+DEPENDENCIES std_msgs
 )
 
 if(BUILD_TESTING)
