@@ -1,4 +1,4 @@
-name: Build and Upload Artifact
+name: kaylordut_interfaces CI
 
 # 触发工作流的事件
 on:
